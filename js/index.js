@@ -1,4 +1,4 @@
-import apiFunc from "./api/apits.js";
+import apiFunc from "./api/api.js";
 // console.log(apiFunc);
 //* 경력
 apiFunc("career").then((data) => {

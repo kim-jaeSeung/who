@@ -1,12 +1,14 @@
-import apiFunc from "./api/apits.js";
+import apiFunc from "./api/api.js";
+import { CareerData } from "./interface.js";
+import { carrerInfo } from "./interface.js";
 // console.log(apiFunc);
 
 //* 경력
-apiFunc("career").then((data) => {
+apiFunc<CareerData>("career").then((data) => {
   console.log("경력", data);
 });
 
-apiFunc("careerInfo").then((data) => {
+apiFunc<carrerInfo>("careerInfo").then((data) => {
   console.log("경력기술서", data);
 });
 
