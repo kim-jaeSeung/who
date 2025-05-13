@@ -1,0 +1,10 @@
+main {
+  display: flex;
+}
+
+main > section {
+  width: 70%;
+}
+main > aside {
+  width: 25%;
+}
