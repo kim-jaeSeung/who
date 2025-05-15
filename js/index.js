@@ -28,18 +28,18 @@ if (mainElement) {
         let currentSection = "";
         // 현재 스크롤 위치와 각 섹션의 위치를 비교
         sections.forEach((section) => {
-            const sectionElement = section; // HTMLElement로 캐스팅
-            const sectionTop = sectionElement.offsetTop - mainElement.offsetTop; // main 내부의 상대적 위치
+            const sectionElement = section;
+            const sectionTop = sectionElement.offsetTop - mainElement.offsetTop; // main 위치
             const sectionHeight = sectionElement.offsetHeight;
             if (mainElement.scrollTop >= sectionTop - sectionHeight / 3) {
-                currentSection = sectionElement.getAttribute("id") || ""; // null 방지
+                currentSection = sectionElement.getAttribute("id") || "";
             }
         });
         // 현재 섹션에 해당하는 a 태그에 스타일 적용
         navLinks.forEach((link) => {
-            link.classList.remove("active"); // 기존 스타일 제거
+            link.classList.remove("active");
             if (link.getAttribute("href") === `#${currentSection}`) {
-                link.classList.add("active"); // 현재 섹션에 해당하는 링크에 스타일 추가
+                link.classList.add("active");
             }
         });
     });

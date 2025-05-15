@@ -35,17 +35,3 @@ async function fetchApi<TResponse, TBody = any>(
     ok: response.ok,
   };
 }
-
-// Example usage:
-async function example() {
-  const response = await fetchApi<{ name: string; age: number }>({
-    method: "GET",
-    url: "https://api.example.com/user",
-  });
-
-  if (response.ok) {
-    console.log(response.data);
-  } else {
-    console.error(`Error: ${response.status}`);
-  }
-}

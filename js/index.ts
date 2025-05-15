@@ -2,6 +2,9 @@ import apiFunc from "./api/api.js";
 import { CareerData } from "./interface.js";
 import { carrerInfo } from "./interface.js";
 import { certificateData } from "./interface.js";
+import { introduce } from "./interface.js";
+import { portfolio } from "./interface.js";
+import { training } from "./interface.js";
 // console.log(apiFunc);
 
 //* 경력
@@ -17,15 +20,15 @@ apiFunc<certificateData>("certificate").then((data) => {
   console.log("자격증", data);
 });
 
-apiFunc("introduce").then((data) => {
+apiFunc<introduce>("introduce").then((data) => {
   console.log("자소서", data);
 });
 
-apiFunc("portfolio").then((data) => {
+apiFunc<portfolio>("portfolio").then((data) => {
   console.log("포트폴리오", data);
 });
 
-apiFunc("training").then((data) => {
+apiFunc<training>("training").then((data) => {
   console.log("경력이수", data);
 });
 
