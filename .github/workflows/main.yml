@@ -24,9 +24,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Create CNAME file
-        run: echo "jaeseung.com" > ./dist/CNAME
-
       - name: Build project
         run: npm run build
 
