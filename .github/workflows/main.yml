@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -24,11 +21,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build TypeScript
+        run: npx tsc
+
+      - name: Prepare deployment
+        run: |
+          mkdir -p deploy
+          cp -r src/css deploy/css
+          cp -r src/img deploy/img
+          cp -r src/json deploy/json
+          cp src/index.html deploy/index.html
+          cp -r dist/js deploy/js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-      # - name: Run tests
-      #   run: npm test
+          publish_dir: ./deploy

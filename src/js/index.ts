@@ -1,10 +1,10 @@
-import apiFunc from "./api/api.js";
-import { CareerData } from "./interface.js";
-import { carrerInfo } from "./interface.js";
-import { certificateData } from "./interface.js";
-import { introduce } from "./interface.js";
-import { portfolio } from "./interface.js";
-import { training } from "./interface.js";
+import apiFunc from "../js/api/api.js";
+import { CareerData } from "../js/interface.js";
+import { carrerInfo } from "../js/interface.js";
+import { certificateData } from "../js/interface.js";
+import { introduce } from "../js/interface.js";
+import { portfolio } from "../js/interface.js";
+import { training } from "../js/interface.js";
 // console.log(apiFunc);
 
 //* 경력
