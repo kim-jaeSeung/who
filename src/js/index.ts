@@ -37,8 +37,8 @@ const sections = document.querySelectorAll("section[id]"); // id가 있는 모�
 const navLinks = document.querySelectorAll("nav ul li a"); // 모든 a 태그
 
 if (mainElement) {
-  // main 태그에서 스크롤 이벤트 감지
-  mainElement.addEventListener("scroll", () => {
+  // main 태그에서 클릭 이벤트
+  mainElement.addEventListener("click", () => {
     let currentSection = "";
 
     // 현재 스크롤 위치와 각 섹션의 위치를 비교
