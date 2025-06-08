@@ -85,6 +85,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  color: #fff;
   vertical-align: baseline;
   font-family: "Noto Sans", sans-serif;
 }
