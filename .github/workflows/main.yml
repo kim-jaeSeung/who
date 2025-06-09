@@ -30,6 +30,7 @@ jobs:
           cp -r src/css deploy/css
           cp -r src/img deploy/img
           cp -r src/json deploy/json
+          cp -r src/portfolio deploy/portfolio
           cp src/index.html deploy/index.html
           cp -r dist/js deploy/js
 
