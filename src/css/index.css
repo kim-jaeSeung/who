@@ -1,7 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root {
+  --orange-color: #ff6933;
+  --title-text-color: #cacaca;
+}
 body {
   display: flex;
   align-items: center;
@@ -28,7 +31,7 @@ main > section {
 }
 main > section section {
   /* height: 100%; */
-  width: 50%;
+  width: 70%;
   padding-top: 30px;
 }
 /* 헤더 */
@@ -82,11 +85,24 @@ nav ul li a.active {
 }
 
 /* 짧은 자기 소개 */
-.aboutWrap {
+main > section section.aboutWrap {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background: url(../img/mainBackImg.svg) no-repeat center center;
+  background-size: cover; */
+  position: relative;
+}
+.introduceTitle p {
+  font-size: 2.5rem;
+  line-height: 1.8;
+}
+.rightImg {
+  position: absolute;
+  right: 0;
+  top: 5%;
 }
 .aboutWrap h4 {
   margin-bottom: 30px;
@@ -100,4 +116,88 @@ nav ul li a.active {
 .aboutWrap p {
   font-size: 1.3rem;
   text-align: right;
+}
+
+section h2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--orange-color);
+}
+section h2::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--orange-color);
+  margin: 10px;
+}
+
+/*  공통 텍스트 */
+.commonTextWrap p {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+.commonTextWrap h4 {
+  font-size: 1.8rem;
+  color: var(--title-text-color);
+  margin-bottom: 1.5rem;
+}
+
+/* 경력 사항 */
+.careerWrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.careerWrap p {
+  display: flex;
+  align-items: center;
+}
+.careerWrap p::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 10px;
+}
+
+/* 포트폴리오 */
+.portfolioWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolioContent {
+  border: 1px solid var(--title-text-color);
+  border-radius: 5px;
+  padding: 10px;
+  width: 47%;
+}
+.portfolioContent h4 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.portfolioContent p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.portfolioContent div {
+}
+.portfolioContent div img {
+}
+.portfolioContent a {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.portfolioContent span {
+  font-size: 0.7rem;
 }
