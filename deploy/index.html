@@ -40,27 +40,11 @@
       </section>
       <!--* 교육 training.json -->
       <section id="training">
-        <div>
-          <h2>교육 이수</h2>
-          <div class="commonTextWrap">
-            <h4>
-              그린컴퓨터아트학원
-            </h4>
-            <p>반응형 웹디자인(ux, ui) & 웹퍼블리셔 디지털 실무 양성과정</p>
-            <p>2021.08 ~ 2021.12</p>
-          </div>
-          <div class="commonTextWrap">
-            <h4>
-              그린컴퓨터아트학원
-            </h4>
-            <p>반응형 웹디자인(ux, ui) & 웹퍼블리셔 디지털 실무 양성과정</p>
-            <p>2021.08 ~ 2021.12</p>
-          </div>
-        </div>
+
       </section>
       <!--* 경력 career.json -->
       <section id="career">
-        <div>
+        <!-- <div>
           <h2>경력</h2>
           <div class="careerWrap">
             <div class="commonTextWrap">
@@ -70,7 +54,7 @@
               <p>퍼블리셔 ui/ux팀 주임</p>
               <p>2022.04 ~ 2024.12 2년 9개월</p>
             </div>
-            <div>
+            <div class="careerInfo">
               <p>도심재난예측 기반 의사결정지원 솔루션 (UDS)
               </p>
               <p>강우유출 수치해석 모형 분석 및 침수 예측 지역 계산</p>
@@ -83,12 +67,12 @@
               <p>침수 정밀 분석을 위한 도시재난 솔루션 고도화</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <!--* 경력 기술서 careerInfo.json-->
-      <section id="careerInfo">
+      <!-- <section id="careerInfo">
 
-      </section>
+      </section> -->
 
       <!--* 포트폴리오 portfolio.json -->
       <section id="portfolio">
@@ -107,27 +91,76 @@
             https://github.com/kim-jaeSeung/travelproject</p>
           <p>skill JavaScript, HTML, CSS</p> -->
           <div class="portfolioWrap">
-            <div class="portfolioContent">
+            <!--! 여행지추천계획 프로젝트 -->
+            <div class="portfolioContent" onclick='travelProjectBtn("portfolioJournnePopup")'>
               <img src="" alt="">
               <h4>Journne</h4>
-              <p>2025.04.04 ~ 2025.04.04</p>
+              <p>2025.03 ~ 2025.05</p>
+              <span>국내 여행 추천 및 계획을 도와주는 웹 애플리케이션</span>
               <div>
                 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
                   alt="React">
-                <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
-                  alt="Next.js">
+
+                <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+                  alt="node">
+                <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"
+                  alt="Express">
                 <img
-                  src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
-                  alt="TypeScript">
+                  src="https://camo.githubusercontent.com/0ad2f9977def22879f2060d206e03d2d88ce1a589d17fbb5ded43a672a1a3da0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176612d3030373339363f7374796c653d666f722d7468652d6261646765266c6f676f3d4f70656e4a444b266c6f676f436f6c6f723d7768697465"
+                  alt="java">
+                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+                  alt="MySQL">
               </div>
-              <a href="#none">github.com</a>
-              <a href=""></a>
-              <span>설명쓰세요</span>
             </div>
+            <!--! 랜덤여행지추천 프로젝트 -->
+            <div class="portfolioContent" onclick='travelProjectBtn("portfolioTravelPopup")'>
+              <img src="" alt="">
+              <h4>랜덤여행지추천</h4>
+              <p>2025.05.01 ~ 2025.05.04</p>
+              <span>
+                시도 기반 랜덤 추천과 지역 검색 기능을 제공하는 여행지 추천 서비스
+              </span>
+              <div>
+                <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                  alt="html">
+                <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                  alt="css">
+                <img
+                  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                  alt="javascript">
+
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="portfolioWrap">
+            <div class="portfolioContent" onclick='travelProjectBtn("portfolioPoopPopup")'>
+              <img src="" alt="">
+              <h4>풉타임</h4>
+              <p>2025.05.04 ~ 2025.05.04</p>
+              <span>사용자가 화장실에서 시간을 보내는 동안 지루함을 달래고 즐거움을 얻을 수 있는 유익하고 재미있는 모바일 애플리케이션</span>
+              <div>
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                  alt="React">
+                <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+                  alt="Node">
+                <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"
+                  alt="Express">
+                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+                  alt="MySQL">
+              </div>
+
+
+            </div>
+
             <div class="portfolioContent">
               <img src="" alt="">
               <h4>Journne</h4>
               <p>2025.04.04 ~ 2025.04.04</p>
+              <span>설명쓰세요</span>
               <div>
                 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
                   alt="React">
@@ -137,9 +170,27 @@
                   src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
                   alt="TypeScript">
               </div>
-              <a href="#none">github.com</a>
-              <a href=""></a>
+            </div>
+          </div>
+
+          <div class="portfolioWrap">
+            <div class="portfolioContent">
+              <img src="" alt="">
+              <h4>Journne</h4>
+              <p>2025.04.04 ~ 2025.04.04</p>
+
               <span>설명쓰세요</span>
+              <div>
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                  alt="React">
+                <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                  alt="Next.js">
+                <img
+                  src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+                  alt="TypeScript">
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -158,6 +209,278 @@
     <!--* 메뉴 -->
 
   </main>
+  <footer class="footerWrap">
+    <h4>🙇🏻‍♂️ 봐주셔서 감사합니다!</h4>
+    <p>궁금한 점 있으면 연락주세요!!</p>
+    <div>
+      <p>jas2878@naver.com</p>
+    </div>
+    <div>
+      <a target="_blank" href="https://github.com/kim-jaeSeung">Github</a>
+    </div>
+    <span>ⓒ 2025. Kim Jae Seung, All Rights Reserved.</span>
+  </footer>
+  <!--! 여행추천계획 프로젝트 상세 -->
+  <aside class="portfolioPopup" id="portfolioJournnePopup" onclick="travelProjectBtnClose()">
+    <div>
+      <div class="portfolioPopupTitle">
+        <h3>🌍 Journee</h3>
+        <button class="portfolioPopupCloseBtn" onclick="travelProjectBtnClose()">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </button>
+      </div>
+      <div class="portfolioPopupInfo portfolioPopupCommon">
+        <h4>프로젝트 설명</h4>
+        <span>여행 계획 간소화 복잡한 일정 계획 없이 추천과 검색으로 여행 일정을 구성할 수 있도록 설계를 했습니다.
+        </span>
+        <span>국내 여행 독려 공공데이터 기반의 추천과 지도 검색을 통해 다양한 국내 명소를 소개</span>
+      </div>
+      <div class="portfolioPopupImg portfolioPopupCommon">
+        <img src="" alt="포트폴리오 이미지">
+      </div>
+      <div class="portfolioPopupTech portfolioPopupCommon">
+        <h4>기술스택</h4>
+        <div>
+          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+            alt="React">
+
+          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+            alt="node">
+          <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"
+            alt="Express">
+          <img
+            src="https://camo.githubusercontent.com/0ad2f9977def22879f2060d206e03d2d88ce1a589d17fbb5ded43a672a1a3da0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176612d3030373339363f7374796c653d666f722d7468652d6261646765266c6f676f3d4f70656e4a444b266c6f676f436f6c6f723d7768697465"
+            alt="java">
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+            alt="MySQL">
+        </div>
+      </div>
+      <div class="portfolioPopupContent ">
+        <div class="portfolioPopupCommon">
+          <h4>기간</h4>
+          <span>2025.03 ~ 2025.05</span>
+        </div>
+
+        <div class="portfolioPopupCommon">
+          <h4>참여인원</h4>
+          <span>6명</span>
+        </div>
+        <div class="portfolioPopupCommon">
+          <h4>관련 링크</h4>
+          <a href="https://github.com/orgs/ShiftLeftt/repositories">Git hub</a>
+
+        </div>
+      </div>
+      <div class="portfolioPopupDetail portfolioPopupCommon">
+        <h4>📌 상세 내용</h4>
+        <span>
+          - 로그인 / 회원가입 (JWT 인증)
+        </span>
+        <p>사용자 인증 기능 구현.</p>
+        <p>JWT를 활용하여 보안성과 확장성 있는 인증 체계 구축.</p>
+        <span>
+          - 지역명 검색 기능
+        </span>
+        <p>사용자가 원하는 지역명을 직접 검색하여 여행지를 탐색할 수 있도록 구현</p>
+        <span>
+          - 커뮤니티 기능
+        </span>
+        <p>여행 팁, 일정 공유 등을 주제로 자유롭게 글을 작성하고 읽을 수 있는 게시판</p>
+        <p>CRUD(생성, 조회, 수정, 삭제) 기능 완비</p>
+        <span>
+          - 랜덤 여행지 추천 (룰렛 기능)
+        </span>
+        <p>룰렛 형태의 인터랙션을 통해 랜덤으로 국내 여행지를 추천</p>
+        <p>사용자 경험(UX)을 고려한 재미 요소 추가</p>
+        <span>
+          - 확정된 여행 계획 저장
+        </span>
+        <p>사용자가 여행 일정을 선택 및 확정하고 저장할 수 있는 기능</p>
+        <p>이후 커뮤니티 공유 및 개인 보관 가능</p>
+        <span>
+          - KakaoMap 기반 장소 검색
+        </span>
+        <p>카카오맵 API를 활용하여 사용자 입력에 따라 여행지, 맛집 등을 검색</p>
+        <p>마커 및 지도 뷰 연동</p>
+      </div>
+
+      <div class="portfolioPopupDetail portfolioPopupCommon">
+        <h4>👍 프로젝트 성과 및 배운 점</h4>
+        <span>
+          - React 기반 SPA 구조 및 컴포넌트 설계 학습
+        </span>
+        <span>
+          - GitHub, Figma 등 협업 도구를 통한 체계적인 개발 진행
+        </span>
+        <span>
+          - 팀장으로서 프로젝트 관리 및 팀원 간의 원활한 소통 경험
+        </span>
+      </div>
+    </div>
+  </aside>
+  <!--! 랜덤여행지 프로젝트 상세 -->
+  <aside class="portfolioPopup" id="portfolioTravelPopup" onclick="travelProjectBtnClose()">
+    <div>
+      <div class="portfolioPopupTitle">
+        <h3>🌍 랜덤여행지추천</h3>
+        <button class="portfolioPopupCloseBtn" onclick="travelProjectBtnClose()">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </button>
+      </div>
+      <div class="portfolioPopupInfo portfolioPopupCommon">
+        <h4>프로젝트 설명</h4>
+        <span>이 프로젝트는 사용자가 특정 지역(시도, 시군구)을 선택하거나 지역명을 검색하여 여행지를 추천받을 수 있는 웹 기반 여행지 추천 앱입니다.
+        </span>
+        <span>단순한 추천을 넘어, 여행 계획 수립과 사용자 커뮤니티 기능으로 확장 가능한 여행 도우미 플랫폼을 목표로 개발 중입니다.</span>
+      </div>
+      <div class="portfolioPopupImg portfolioPopupCommon">
+        <img src="" alt="포트폴리오 이미지">
+      </div>
+      <div class="portfolioPopupTech portfolioPopupCommon">
+        <h4>기술스택</h4>
+        <div>
+          <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html">
+          <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css">
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+            alt="javascript">
+        </div>
+      </div>
+      <div class="portfolioPopupContent ">
+        <div class="portfolioPopupCommon">
+          <h4>기간</h4>
+          <span>2025.05.01 ~ 2025.05.04</span>
+        </div>
+
+        <div class="portfolioPopupCommon">
+          <h4>참여인원</h4>
+          <span>1명</span>
+        </div>
+        <div class="portfolioPopupCommon">
+          <h4>관련 링크</h4>
+          <a href="https://github.com/kim-jaeSeung/travelproject">Git hub</a>
+        </div>
+      </div>
+      <div class="portfolioPopupDetail portfolioPopupCommon">
+        <h4>📌 상세 내용</h4>
+        <span>
+          - 시도/시군구 기반 여행지 추천
+          시도와 시군구를 선택하면, 해당 지역의 여행지 중 하나를 랜덤으로 추천합니다.
+          행정구역 정보 및 여행지 데이터는 공공 API를 기반으로 합니다.
+        </span>
+        <span>
+          - 지역명 검색 기능 (개발 중)
+          사용자가 원하는 지역명을 직접 검색하여 여행지를 탐색할 수 있도록 구현 예정입니다.
+        </span>
+
+        <span>
+          - 콘텐츠 기반 추천 (기획 단계)
+          예: "자연 + 카페", "역사 + 맛집" 등 두 가지 키워드 조합으로 여행지 추천
+        </span>
+      </div>
+      <div class="portfolioPopupDetail portfolioPopupCommon">
+        <h4>⚠️ 현재 한계점</h4>
+        <span>
+          - 여행지 상세 내용 부족
+        </span>
+        <p> 공공 API에서 상세 설명이 제공되지 않아 보류 상태 / 일부 데이터르 만들어서 사용 중</p>
+        <span>
+          - 이미지 데이터 누락
+        </span>
+        <p>API 응답에 이미지가 없는 경우가 다수 존재함</p>
+        <p>현재는 이미지가 있는 여행지만 우선 활용</p>
+      </div>
+    </div>
+  </aside>
+  <!--! 풉타임 프로젝트 상세 -->
+  <aside class="portfolioPopup" id="portfolioPoopPopup" onclick="travelProjectBtnClose()">
+    <div>
+      <div class="portfolioPopupTitle">
+        <h3>🌍 풉타임</h3>
+        <button class="portfolioPopupCloseBtn" onclick="travelProjectBtnClose()">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </button>
+      </div>
+      <div class="portfolioPopupInfo portfolioPopupCommon">
+        <h4>프로젝트 설명</h4>
+        <span>사용자가 화장실에서 시간을 보내는 동안 지루함을 달래고 즐거움을 얻을 수 있는 유익한 모바일 애플리케이션을 개발합니다.
+        </span>
+        <span>스마트폰을 사용하는 모든 연령대의 사용자, 특히 화장실에서 스마트폰을 자주 사용하는 사용자를 타겟으로 합니다.</span>
+      </div>
+      <div class="portfolioPopupImg portfolioPopupCommon">
+        <img src="" alt="포트폴리오 이미지">
+      </div>
+      <div class="portfolioPopupTech portfolioPopupCommon">
+        <h4>기술스택</h4>
+        <div>
+          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+            alt="React">
+          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+            alt="Node">
+          <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"
+            alt="Express">
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+            alt="MySQL">
+        </div>
+      </div>
+      <div class="portfolioPopupContent ">
+        <div class="portfolioPopupCommon">
+          <h4>기간</h4>
+          <span>2025.05.01 ~ 2025.05.04</span>
+        </div>
+
+        <div class="portfolioPopupCommon">
+          <h4>참여인원</h4>
+          <span>5명</span>
+        </div>
+        <div class="portfolioPopupCommon">
+          <h4>관련 링크</h4>
+          <a href="https://github.com/kim-jaeSeung/poop">Git hub</a>
+        </div>
+      </div>
+      <div class="portfolioPopupDetail portfolioPopupCommon">
+        <h4>📌 상세 내용</h4>
+        <span>
+          - 시도/시군구 기반 여행지 추천
+          시도와 시군구를 선택하면, 해당 지역의 여행지 중 하나를 랜덤으로 추천합니다.
+          행정구역 정보 및 여행지 데이터는 공공 API를 기반으로 합니다.
+        </span>
+        <span>
+          - 지역명 검색 기능 (개발 중)
+          사용자가 원하는 지역명을 직접 검색하여 여행지를 탐색할 수 있도록 구현 예정입니다.
+        </span>
+
+        <span>
+          - 콘텐츠 기반 추천 (기획 단계)
+          예: "자연 + 카페", "역사 + 맛집" 등 두 가지 키워드 조합으로 여행지 추천
+        </span>
+      </div>
+      <div class="portfolioPopupDetail portfolioPopupCommon">
+        <h4>⚠️ 현재 한계점</h4>
+        <span>
+          - 여행지 상세 내용 부족
+        </span>
+        <p> 공공 API에서 상세 설명이 제공되지 않아 보류 상태 / 일부 데이터르 만들어서 사용 중</p>
+        <span>
+          - 이미지 데이터 누락
+        </span>
+        <p>API 응답에 이미지가 없는 경우가 다수 존재함</p>
+        <p>현재는 이미지가 있는 여행지만 우선 활용</p>
+      </div>
+    </div>
+  </aside>
+
   <script type="module" src="./js/index.js"></script>
 </body>
 
