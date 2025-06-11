@@ -22,7 +22,7 @@ main > section {
   justify-content: center;
   flex-direction: column;
 }
-main > section section {
+main > section section section {
   margin-top: 100px;
   width: 50%;
   padding-top: 30px;
@@ -89,6 +89,12 @@ main > section section.aboutWrap {
   background-size: cover; */
   position: relative;
 }
+main > section section.aboutWrap > div {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
+}
 .introduceTitle p {
   font-size: 2.2rem;
   line-height: 1.8;
@@ -106,6 +112,11 @@ main > section section.aboutWrap {
   position: absolute;
   right: 0;
   top: 5%;
+}
+.leftImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .aboutWrap h4 {
   margin-bottom: 10px;
@@ -214,6 +225,7 @@ section h2::before {
   display: block;
   font-size: 1rem;
   margin-bottom: 30px;
+  height: 70px;
 }
 
 /* 푸터 */
@@ -325,7 +337,6 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
 .portfolioPopupCommon span {
   font-size: 1.2rem;
   display: block;
-  text-align: center;
 }
 .portfolioPopupDetail.portfolioPopupCommon p {
   font-size: 1.2rem;
@@ -338,6 +349,7 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
   margin-bottom: 15px;
 }
 .portfolioPopupCommon a {
+  text-align: center;
   border-bottom: 1px solid var(--title-text-color);
 }
 .portfolioPopupContent {
@@ -346,4 +358,19 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
 }
 .portfolioPopupContent > div:not(:last-child) {
   margin-right: 20px;
+}
+/* 포트폴리오 모달창 이미지 */
+.portfolioPopupImg img {
+  width: 100%;
+}
+/* 배경이미지 */
+.sectionWrap {
+  width: 100vw;
+  background: url(../img/backimg.svg) no-repeat center center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
