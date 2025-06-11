@@ -203,10 +203,13 @@ section h2::before {
 .portfolioContent:hover {
   background-color: #44485f;
 }
-
+.portfolioContent > img {
+  width: 100%;
+  border-radius: 5px;
+}
 .portfolioContent h4 {
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .portfolioContent p {
@@ -287,8 +290,8 @@ aside.portfolioPopup {
 aside.portfolioPopup > div {
   border: 1px solid var(--title-text-color);
   border-radius: 5px;
-  width: 50%;
-  padding: 20px;
+  width: 80%;
+  padding: 50px;
   max-height: 70%;
   overflow: auto;
   background-color: #313444;
@@ -359,13 +362,16 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
 .portfolioPopupContent > div:not(:last-child) {
   margin-right: 20px;
 }
+.portfolioPopupContent > div:nth-child(2) span {
+  text-align: center;
+}
 /* 포트폴리오 모달창 이미지 */
 .portfolioPopupImg img {
   width: 100%;
 }
 /* 배경이미지 */
 .sectionWrap {
-  width: 100vw;
+  width: 100%;
   background: url(../img/backimg.svg) no-repeat center center;
   background-size: cover;
   /* background-attachment: fixed; */

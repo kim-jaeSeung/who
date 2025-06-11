@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="icon" href="./img/favicon.png" type="image/png">
-  <title>김재승 | 프론트엔드 개발자</title>
+  <title>김재승 | 웹 개발자 개발자</title>
 </head>
 
 <body>
@@ -56,10 +56,10 @@
             <div class="portfolioWrap">
               <!--! 여행지추천계획 프로젝트 -->
               <div class="portfolioContent" onclick='travelProjectBtn("portfolioJournnePopup")'>
-                <img src="" alt="">
+                <img src="./img/JournnePo.svg" alt="">
                 <h4>Journne</h4>
                 <p>2025.03 ~ 2025.05</p>
-                <span>국내 여행 추천 및 계획을 도와주는 웹 애플리케이션</span>
+                <!-- <span>국내 여행 추천 및 계획을 도와주는 웹 애플리케이션</span> -->
                 <div>
                   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="40"
                     height="40">
@@ -76,12 +76,12 @@
               </div>
               <!--! 랜덤여행지추천 프로젝트 -->
               <div class="portfolioContent" onclick='travelProjectBtn("portfolioTravelPopup")'>
-                <img src="" alt="">
+                <img src="./img/travelPo.svg" alt="">
                 <h4>랜덤여행지추천</h4>
                 <p>2025.05.01 ~ 2025.05.04</p>
-                <span>
+                <!-- <span>
                   시도 기반 랜덤 추천과 지역 검색 기능을 제공하는 여행지 추천 서비스
-                </span>
+                </span> -->
                 <div>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
                     width="40" height="40" />
@@ -100,10 +100,10 @@
             <div class="portfolioWrap">
               <!--! 풉타임 프로젝트 -->
               <div class="portfolioContent" onclick='travelProjectBtn("portfolioPoopPopup")'>
-                <img src="" alt="">
+                <img src="./img/poopPo.svg" alt="">
                 <h4>풉타임</h4>
                 <p>2025.05.04 ~ 2025.05.04</p>
-                <span>사용자가 화장실에서 시간을 보내는 동안 지루함을 달래고 즐거움을 얻을 수 있는 유익하고 재미있는 모바일 애플리케이션</span>
+                <!-- <span>사용자가 화장실에서 시간을 보내는 동안 지루함을 달래고 즐거움을 얻을 수 있는 유익하고 재미있는 모바일 애플리케이션</span> -->
                 <div>
                   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="40"
                     height="40">
@@ -120,10 +120,10 @@
               </div>
               <!--! 모투슛 프로젝트 -->
               <div class="portfolioContent" onclick='travelProjectBtn("portfolioMoTooPopup")'>
-                <img src="" alt="">
+                <img src="./img/motooPo.svg" alt="">
                 <h4>모투슛</h4>
                 <p>2025.05.15 ~ 2025.06.11</p>
-                <span>초보자도 부담 없이 재밌게 주식 개념 배우고 실전 감각 키워서, 장기적인 재테크 입문을 돕는 웹앱</span>
+                <!-- <span>초보자도 부담 없이 재밌게 주식 개념 배우고 실전 감각 키워서, 장기적인 재테크 입문을 돕는 웹앱</span> -->
                 <div>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"
                     width="40" height="40" />
@@ -144,11 +144,11 @@
             <div class="portfolioWrap">
               <!--! 소개페이지 프로젝트 -->
               <div class="portfolioContent" onclick='travelProjectBtn("portfolioMyPagePopup")'>
-                <img src="" alt="">
+                <img src="./img/myPagePo.svg" alt="">
                 <h4>나의 포트폴리오 사이트</h4>
                 <p>2025.05.13 ~ 2025.06.11</p>
 
-                <span>나의 포트폴리오 사이트 제작 프로젝트</span>
+                <!-- <span>나의 포트폴리오 사이트 제작 프로젝트</span> -->
                 <div>
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
                     width="40" height="40" />
@@ -489,7 +489,7 @@
       <div class="portfolioPopupContent ">
         <div class="portfolioPopupCommon">
           <h4>기간</h4>
-          <span>2025.05.01 ~ 2025.05.04</span>
+          <span>2025.05.15 ~ 2025.06.11</span>
         </div>
 
         <div class="portfolioPopupCommon">
@@ -519,16 +519,28 @@
         </span>
       </div>
       <div class="portfolioPopupDetail portfolioPopupCommon">
-        <h4>⚠️ 현재 한계점</h4>
+        <h4>⚠️ 문제 해결</h4>
         <span>
-          - 여행지 상세 내용 부족
+          - 외부 API 초기 로딩 속도, 메모리 사용량 문제
         </span>
-        <p> 공공 API에서 상세 설명이 제공되지 않아 보류 상태 / 일부 데이터르 만들어서 사용 중</p>
+        <p>외부 API를 통해 주식 가격을 받아와 프론트엔드에서 이틀치 데이터를 비교하며 실시간 주가 변동 기능을 구현하려 했으나, 느린 초기 로딩 속도와 과도한 메모리 사용량 문제가 발생했습니다.
+
+          이를 해결하기 위해, 외부 API 호출 및 실시간 주가 변동 로직을 백엔드로 이전하고, 처리된 데이터를 데이터베이스에 저장하는 방식으로 개선했습니다.</p>
+      </div>
+      <div class="portfolioPopupDetail portfolioPopupCommon">
+        <h4>👍 결과</h4>
         <span>
-          - 이미지 데이터 누락
+          - 초기 로딩 속도 개선,메모리 사용량 감소 </span>
+        <p>프론트엔드에서 직접 API를 호출하고 데이터를 처리하는 부담이 줄어들어 초기 로딩 속도가 크게 단축되었습니다.</p>
+        <span>
+          - 메모리 사용량 감소
         </span>
-        <p>API 응답에 이미지가 없는 경우가 다수 존재함</p>
-        <p>현재는 이미지가 있는 여행지만 우선 활용</p>
+        <p>프론트엔드에서의 데이터 처리 및 저장 부담이 백엔드로 이전되어 클라이언트 측의 메모리 사용량이 효율적으로 관리됩니다.</p>
+        <span>
+          - 사용자 경험 향상
+        </span>
+        <p> 첫 방문 사용자도 지연 없이 서비스를 이용할 수 있게 되어 전반적인 사용자 경험이 향상되었습니다.</p>
+
       </div>
     </div>
   </aside>
