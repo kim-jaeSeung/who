@@ -6,7 +6,11 @@ import { certificateData } from "../js/interface.js";
 import { introduce } from "../js/interface.js";
 import { portfolio } from "../js/interface.js";
 import { training } from "../js/interface.js";
-import { travelProjectBtn, travelProjectBtnClose } from "../js/modal.js";
+import {
+  travelProjectBtn,
+  travelProjectBtnClose,
+  travelProjectbackClose,
+} from "../js/modal.js";
 // import { CareerEntry } from "../js/interface.js";
 // console.log(apiFunc);
 
@@ -113,3 +117,4 @@ apiFunc<training>("training").then((trainingApiData) => {
 // 포트폴리오 모달창 함수 선언
 (window as any).travelProjectBtn = travelProjectBtn;
 (window as any).travelProjectBtnClose = travelProjectBtnClose;
+(window as any).travelProjectbackClose = travelProjectbackClose;

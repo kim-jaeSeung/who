@@ -4,11 +4,19 @@ export function travelProjectBtn(modalId: string) {
   document.body.style.overflow = "hidden";
 }
 
+export function travelProjectbackClose(e: MouseEvent) {
+  if (e.target === e.currentTarget) {
+    document.querySelectorAll(".portfolioPopup").forEach((element) => {
+      (element as HTMLElement).style.display = "none";
+    });
+    document.body.style.overflow = "";
+  }
+}
+
 export function travelProjectBtnClose() {
-  // let modalMain = document.querySelector(".portfolioPopup") as HTMLElement;
-  // modalMain.style.display = "none";
   document.querySelectorAll(".portfolioPopup").forEach((element) => {
     (element as HTMLElement).style.display = "none";
+
+    document.body.style.overflow = "";
   });
-  document.body.style.overflow = "";
 }
