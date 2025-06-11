@@ -201,7 +201,7 @@ section h2::before {
   cursor: pointer;
 }
 .portfolioContent:hover {
-  background-color: #44485f;
+  background-color: #1d202e;
 }
 .portfolioContent > img {
   width: 100%;
@@ -279,7 +279,7 @@ aside.portfolioPopup {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #00000061;
+  background-color: #00000092;
   width: 100%;
   height: 100%;
   display: none;
@@ -288,11 +288,12 @@ aside.portfolioPopup {
   justify-content: center;
 }
 aside.portfolioPopup > div {
-  border: 1px solid var(--title-text-color);
+  /* border: 1px solid var(--title-text-color); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 5px;
   width: 80%;
   padding: 50px;
-  max-height: 70%;
+  max-height: 80%;
   overflow: auto;
   background-color: #313444;
 }
@@ -335,6 +336,7 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   margin-top: 30px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 .portfolioPopupCommon a,
 .portfolioPopupCommon span {
@@ -347,9 +349,12 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  line-height: 30px;
 }
 .portfolioPopupDetail span {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  line-height: 30px;
 }
 .portfolioPopupCommon a {
   text-align: center;
