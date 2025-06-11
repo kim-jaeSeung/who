@@ -1,5 +1,5 @@
 import apiFunc from "../js/api/api.js";
-import { travelProjectBtn, travelProjectBtnClose } from "../js/modal.js";
+import { travelProjectBtn, travelProjectBtnClose, travelProjectbackClose, } from "../js/modal.js";
 // import { CareerEntry } from "../js/interface.js";
 // console.log(apiFunc);
 //* 경력
@@ -88,3 +88,4 @@ apiFunc("training").then((trainingApiData) => {
 // 포트폴리오 모달창 함수 선언
 window.travelProjectBtn = travelProjectBtn;
 window.travelProjectBtnClose = travelProjectBtnClose;
+window.travelProjectbackClose = travelProjectbackClose;
