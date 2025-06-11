@@ -1,4 +1,4 @@
-import apiFunc from "./api/api";
+import apiFunc from "./api";
 import { CareerData } from "./interface";
 
 const mockCareerData: CareerData = {

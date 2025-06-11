@@ -1,4 +1,4 @@
-import apiFunc from "../js/api/api.js";
+import apiFunc from "./api.js";
 
 import { CareerData } from "../js/interface.js";
 import { carrerInfo } from "../js/interface.js";

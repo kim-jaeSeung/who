@@ -1,4 +1,4 @@
-import apiFunc from "../js/api/api.js";
+import apiFunc from "./api.js";
 import { travelProjectBtn, travelProjectBtnClose, travelProjectbackClose, } from "../js/modal.js";
 // import { CareerEntry } from "../js/interface.js";
 // console.log(apiFunc);
