@@ -373,7 +373,8 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
 }
 /* 포트폴리오 모달창 이미지 */
 .portfolioPopupImg img {
-  width: 100%;
+  width: 80%;
+  margin-left: 0;
 }
 /* 배경이미지 */
 .sectionWrap {
