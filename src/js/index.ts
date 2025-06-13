@@ -35,7 +35,7 @@ Promise.all([
     careerApiData.experience[0].position
   } ${careerApiData.experience[0].role}  </p>
               <p>${careerApiData.experience[0].start_date} ~ ${
-    careerApiData.experience[0].start_date
+    careerApiData.experience[0].end_date
   } ${careerApiData.experience[0].duration}</p>
             </div>
             <div class="careerInfo">
