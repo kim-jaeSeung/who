@@ -19,7 +19,7 @@ Promise.all([
                 ${careerApiData.experience[0].company}
               </h4>
               <p> ${careerApiData.experience[0].department} ${careerApiData.experience[0].position} ${careerApiData.experience[0].role}  </p>
-              <p>${careerApiData.experience[0].start_date} ~ ${careerApiData.experience[0].start_date} ${careerApiData.experience[0].duration}</p>
+              <p>${careerApiData.experience[0].start_date} ~ ${careerApiData.experience[0].end_date} ${careerApiData.experience[0].duration}</p>
             </div>
             <div class="careerInfo">
              ${careerInfoApiData.map((item) => `<p>${item.name}</p>`).join("")}
