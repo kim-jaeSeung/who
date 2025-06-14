@@ -7,7 +7,7 @@
     "test": "jest",
     "clean": "rimraf dist deploy",
     "build": "npm run clean && tsc && npm run copy-static",
-    "copy-static": "mkdir -p deploy && cp -r src/css deploy/css && cp -r src/img deploy/img && cp -r src/json deploy/json && cp -r src/portfolio deploy/portfolio && cp src/index.html deploy/index.html && cp -r dist/js deploy/js",
+    "copy-static": "mkdir -p deploy && cp -r src/css deploy/css && cp -r src/img deploy/img && cp -r src/json deploy/json && cp src/index.html deploy/index.html && cp -r dist/js deploy/js",
     "watch:css": "chokidar 'src/css/**/*.css' -c 'cp -r src/css deploy/css'",
     "watch:ts": "tsc --watch",
     "dev": "npm-run-all --parallel watch:css watch:ts"
