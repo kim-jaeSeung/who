@@ -129,4 +129,61 @@ table {
   html {
     font-size: 12px;
   }
+  section.aboutWrap h4 {
+    margin-bottom: 25px;
+    font-size: 3rem;
+  }
+  .rightImg,
+  .leftImg {
+    display: none;
+  }
+  main > section section.aboutWrap#about > div {
+    right: auto;
+    width: 90%;
+  }
+  main > section section section {
+    width: 90%;
+    margin-top: 50px;
+  }
+  div.portfolioWrap {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  div.portfolioContent {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  div.careerWrap {
+    flex-direction: column;
+  }
+  div.careerInfo {
+    margin-top: 20px;
+  }
+  .careerWrap > .careerInfo p::before {
+    margin-left: 0;
+  }
+  div.careerWrap > .careerInfo p {
+    font-size: 1.2rem;
+  }
+
+  /* 팝업 */
+  aside.portfolioPopup > div {
+    padding: 20px;
+    width: 90%;
+    max-height: 90%;
+  }
+  .portfolioPopupTitle button svg {
+    width: 1.2rem;
+  }
+  div.portfolioPopupImg img.goTravelImg,
+  div.portfolioPopupImg img {
+    width: 100%;
+  }
+  .portfolioPopupTech div > img {
+    height: 20px;
+  }
+
+  .portfolioPopupDetail > img {
+    width: 100%;
+  }
 }

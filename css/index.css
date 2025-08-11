@@ -379,13 +379,16 @@ aside.portfolioPopup > div::-webkit-scrollbar-thumb {
 .portfolioPopupContent > div:not(:last-child) {
   margin-right: 20px;
 }
-.portfolioPopupContent > div:nth-child(2) span {
+.portfolioPopupContent > div span {
   text-align: center;
 }
 /* 포트폴리오 모달창 이미지 */
 .portfolioPopupImg img {
   width: 80%;
   margin-left: 0;
+}
+.portfolioPopupImg img.goTravelImg {
+  width: 50%;
 }
 /* 배경이미지 */
 .sectionWrap {
