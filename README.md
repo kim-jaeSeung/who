@@ -29,22 +29,67 @@ npm run preview
 ## 🌐 배포
 
 GitHub Pages를 통해 배포됩니다.
+
 - URL: https://kim-jaeSeung.github.io/who/
 
 ## 📁 프로젝트 구조
 
 ```
-src/
-├── components/       # 재사용 가능한 컴포넌트
-├── pages/           # 페이지 컴포넌트 (Home, ProjectDetail)
-├── data/            # 포트폴리오 데이터
-├── utils/           # 유틸리티 함수
-└── App.tsx          # 메인 앱 & 라우팅
+who
+├─ README.md
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.js
+├─ public
+│  ├─ img
+│  │  ├─ JournnePo.svg
+│  │  ├─ _copy.png
+│  │  ├─ backimg.svg
+│  │  ├─ favicon.png
+│  │  ├─ gotravel.png
+│  │  ├─ journeeCM.svg
+│  │  ├─ journeeCM2.svg
+│  │  ├─ mainBackImg.svg
+│  │  ├─ mainLeft.svg
+│  │  ├─ mainRight.svg
+│  │  ├─ motoo.svg
+│  │  ├─ motooInfo.png
+│  │  ├─ motooPo.svg
+│  │  ├─ motooSY.png
+│  │  ├─ myPagePo.svg
+│  │  ├─ poopPo.svg
+│  │  ├─ poopPoImg.png
+│  │  ├─ river.png
+│  │  ├─ testCode.png
+│  │  ├─ topRight.svg
+│  │  └─ travelPo.svg
+│  └─ vite.svg
+├─ src
+│  ├─ App.tsx
+│  ├─ assets
+│  ├─ components
+│  │  ├─ About.tsx
+│  │  ├─ Footer.tsx
+│  │  ├─ Header.tsx
+│  │  ├─ Hero.tsx
+│  │  ├─ PortfolioCard.tsx
+│  │  ├─ PortfolioSection.tsx
+│  │  └─ Skills.tsx
+│  ├─ data
+│  │  └─ portfolio.ts
+│  ├─ index.css
+│  ├─ main.tsx
+│  ├─ pages
+│  │  ├─ Home.tsx
+│  │  └─ ProjectDetail.tsx
+│  └─ utils
+│     └─ techBadges.ts
+├─ tailwind.config.js
+├─ tsconfig.app.json
+├─ tsconfig.json
+├─ tsconfig.node.json
+└─ vite.config.ts
+
 ```
-
-## ✨ 주요 기능
-
-- 반응형 디자인
-- 프로젝트 상세 페이지 라우팅
-- 다음/이전 프로젝트 네비게이션
-- 부드러운 애니메이션 및 트랜지션
