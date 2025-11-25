@@ -14,6 +14,19 @@ export default {
                 subText: 'rgb(73 75 78)', // Sub Text
                 white: '#FFFFFF',
             },
+            fontSize: {
+                'xs': ['1.05rem', { lineHeight: '1.5rem' }],
+                'sm': ['1.275rem', { lineHeight: '1.875rem' }],
+                'base': ['1.5rem', { lineHeight: '2.25rem' }],
+                'lg': ['1.65rem', { lineHeight: '2.55rem' }],
+                'xl': ['1.8rem', { lineHeight: '2.7rem' }],
+                '2xl': ['2.25rem', { lineHeight: '3rem' }],
+                '3xl': ['2.85rem', { lineHeight: '3.6rem' }],
+                '4xl': ['3.45rem', { lineHeight: '4.2rem' }],
+                '5xl': ['4.5rem', { lineHeight: '1' }],
+                '6xl': ['5.4rem', { lineHeight: '1' }],
+                '7xl': ['6.75rem', { lineHeight: '1' }],
+            },
             fontFamily: {
                 sans: ['Noto Sans KR', 'sans-serif'],
             },

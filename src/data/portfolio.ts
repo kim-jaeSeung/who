@@ -103,7 +103,7 @@ export const portfolioData: PortfolioItem[] = [
         teamSize: 1,
         details: [
             { title: "데이터 구조화", content: "JSON/TS 기반 데이터 관리로 유지보수 용이성 확보" },
-            { title: "모던 UI/UX", content: "Toss 스타일의 깔끔하고 직관적인 디자인 구현" },
+            { title: "모던 UI/UX", content: "깔끔하고 직관적인 디자인 구현" },
             { title: "반응형 디자인", content: "모바일 및 데스크탑 환경 최적화" }
         ],
         learned: [

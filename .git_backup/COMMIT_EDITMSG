@@ -1,0 +1,29 @@
+# 제목: 50자 이하로 간결하게 작성 (타입: 간단한 설명)
+# |<----  50자 제한선  ---->|
+
+# 본문: 72자로 줄바꿈하여 상세 설명
+# |<----  72자 제한선  ---->|
+
+
+# 🏷️ 타입 (Type):
+# feat:     새로운 기능 추가
+# fix:      버그 수정  
+# docs:     문서 변경
+# style:    코드 포맷팅 (기능 변경 없음)
+# refactor: 코드 리팩토링
+# test:     테스트 코드 추가/수정
+# chore:    빌드 도구, 패키지 매니저 설정
+
+# 📋 체크리스트:
+# - [ ] 코드가 정상적으로 빌드되는가?
+# - [ ] 관련 테스트를 실행했는가?
+# - [ ] 문서 업데이트가 필요한가?
+
+# 🔗 관련 이슈: (있다면)
+# Closes #이슈번호
+# Fixes #이슈번호
+# Resolves #이슈번호
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#

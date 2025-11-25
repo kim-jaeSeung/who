@@ -1,5 +1,6 @@
 import type { PortfolioItem } from '../data/portfolio';
 import { useEffect } from 'react';
+import { getTechBadge } from '../utils/techBadges';
 
 interface Props {
     item: PortfolioItem;
@@ -43,9 +44,12 @@ const PortfolioModal = ({ item, onClose }: Props) => {
                 <div className="p-8">
                     <div className="flex flex-wrap gap-2 mb-8">
                         {item.techStack.map(tech => (
-                            <span key={tech} className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-lg text-sm font-semibold border border-gray-200">
-                                {tech}
-                            </span>
+                            <img
+                                key={tech}
+                                src={getTechBadge(tech)}
+                                alt={tech}
+                                className="h-7"
+                            />
                         ))}
                     </div>
 
