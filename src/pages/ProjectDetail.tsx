@@ -9,8 +9,7 @@ const ProjectDetail = () => {
   const currentIndex = portfolioData.findIndex((project) => project.id === id);
   const item = portfolioData[currentIndex];
 
-  const prevProject =
-    currentIndex > 0 ? portfolioData[currentIndex - 1] : null;
+  const prevProject = currentIndex > 0 ? portfolioData[currentIndex - 1] : null;
   const nextProject =
     currentIndex < portfolioData.length - 1
       ? portfolioData[currentIndex + 1]
