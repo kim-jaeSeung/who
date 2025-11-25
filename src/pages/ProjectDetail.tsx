@@ -149,8 +149,10 @@ const ProjectDetail = () => {
                 rel="noreferrer"
                 className="flex items-center gap-3 text-gray-700 hover:text-primary hover:underline font-medium transition-colors"
               >
-                <span className="text-xl">🔗</span>
-                데모 사이트
+                <span className="text-xl ">
+                  <img className="w-6" src="/who/img/npmLogo.svg" alt="" />
+                </span>
+                NPM 사이트
               </a>
             )}
           </div>
