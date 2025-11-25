@@ -1,22 +1,21 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import PortfolioSection from './components/PortfolioSection';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-text selection:bg-primary selection:text-white">
-      <Header />
-      <main className="max-w-screen-lg mx-auto px-6 pb-20">
-        <Hero />
-        <About />
-        <Skills />
-        <PortfolioSection />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter basename="/who">
+      <div className="min-h-screen bg-background text-text selection:bg-primary selection:text-white">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
