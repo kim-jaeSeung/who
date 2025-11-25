@@ -48,7 +48,7 @@ const PortfolioModal = ({ item, onClose }: Props) => {
                                 key={tech}
                                 src={getTechBadge(tech)}
                                 alt={tech}
-                                className="h-7"
+                                className="h-6"
                             />
                         ))}
                     </div>
@@ -96,7 +96,7 @@ const PortfolioModal = ({ item, onClose }: Props) => {
 
                     {item.learned && (
                         <div>
-                            <h4 className="font-bold text-lg mb-4 text-gray-900">배운 점</h4>
+
                             <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
                                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                                     {item.learned.map((learn, idx) => (

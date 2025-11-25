@@ -15,17 +15,17 @@ export default {
                 white: '#FFFFFF',
             },
             fontSize: {
-                'xs': ['1.05rem', { lineHeight: '1.5rem' }],
-                'sm': ['1.275rem', { lineHeight: '1.875rem' }],
-                'base': ['1.5rem', { lineHeight: '2.25rem' }],
-                'lg': ['1.65rem', { lineHeight: '2.55rem' }],
-                'xl': ['1.8rem', { lineHeight: '2.7rem' }],
-                '2xl': ['2.25rem', { lineHeight: '3rem' }],
-                '3xl': ['2.85rem', { lineHeight: '3.6rem' }],
-                '4xl': ['3.45rem', { lineHeight: '4.2rem' }],
-                '5xl': ['4.5rem', { lineHeight: '1' }],
-                '6xl': ['5.4rem', { lineHeight: '1' }],
-                '7xl': ['6.75rem', { lineHeight: '1' }],
+                'xs': ['0.875rem', { lineHeight: '1.25rem' }],      // 14px
+                'sm': ['1rem', { lineHeight: '1.5rem' }],            // 16px
+                'base': ['1.125rem', { lineHeight: '1.75rem' }],     // 18px (본문)
+                'lg': ['1.25rem', { lineHeight: '1.875rem' }],       // 20px
+                'xl': ['1.5rem', { lineHeight: '2rem' }],            // 24px
+                '2xl': ['1.875rem', { lineHeight: '2.25rem' }],      // 30px
+                '3xl': ['2.25rem', { lineHeight: '2.5rem' }],        // 36px
+                '4xl': ['2.75rem', { lineHeight: '3rem' }],          // 44px
+                '5xl': ['3.5rem', { lineHeight: '1' }],              // 56px
+                '6xl': ['4rem', { lineHeight: '1' }],                // 64px
+                '7xl': ['5rem', { lineHeight: '1' }],                // 80px
             },
             fontFamily: {
                 sans: ['Noto Sans KR', 'sans-serif'],

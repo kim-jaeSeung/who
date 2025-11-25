@@ -42,7 +42,7 @@ const Skills = () => {
                                     key={skill.name}
                                     src={skill.badge}
                                     alt={skill.name}
-                                    className="h-8"
+                                    className="h-6"
                                 />
                             ))}
                         </div>
