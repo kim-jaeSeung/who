@@ -39,7 +39,7 @@ export const portfolioData: PortfolioItem[] = [
             "GitHub, Figma 등 협업 도구를 통한 체계적인 개발 진행",
             "팀장으로서 프로젝트 관리 및 팀원 간의 원활한 소통 경험"
         ],
-        imgSrc: "/img/JournnePo.svg",
+        imgSrc: "/who/img/JournnePo.svg",
         links: {
             github: "https://github.com/orgs/ShiftLeftt/repositories"
         }
@@ -62,7 +62,7 @@ export const portfolioData: PortfolioItem[] = [
             "직접 데이터를 가공하여 REST API를 통해 콘텐츠를 제공하는 방법 학습",
             "팀원들과의 협업을 통해 다양한 기술 스택 활용 경험"
         ],
-        imgSrc: "/img/poopPo.svg",
+        imgSrc: "/who/img/poopPo.svg",
         links: {
             github: "https://github.com/kim-jaeSeung/poop"
         }
@@ -87,7 +87,7 @@ export const portfolioData: PortfolioItem[] = [
             "외부 API 로딩 속도 문제 해결을 위한 백엔드 캐싱 및 DB 저장 구조 도입",
             "프론트엔드/백엔드 성능 최적화 경험"
         ],
-        imgSrc: "/img/motooPo.svg",
+        imgSrc: "/who/img/motooPo.svg",
         links: {
             github: "https://github.com/kdt-ful-class-three-group/KDT-FUL-3_PROJECT-A-2"
         }
@@ -110,7 +110,7 @@ export const portfolioData: PortfolioItem[] = [
             "React + TypeScript + TailwindCSS 최신 스택 활용",
             "컴포넌트 재사용성 및 데이터 주도 UI 설계"
         ],
-        imgSrc: "/img/myPagePo.svg",
+        imgSrc: "/who/img/myPagePo.svg",
         links: {
             github: "https://github.com/kim-jaeSeung/who"
         }
