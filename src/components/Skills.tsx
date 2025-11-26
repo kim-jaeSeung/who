@@ -26,13 +26,19 @@ const Skills = () => {
     };
 
     return (
-        <section id="skills" className="py-20 border-t border-gray-100">
-            <div className="mb-10">
+        <section id="skills" className="py-20 border-t border-gray-100 relative overflow-hidden">
+            {/* 장식 요소 - 사각형과 원형 조합 */}
+            <div className="absolute top-20 right-20 w-24 h-24 bg-cyan-100/40 rounded-lg rotate-12" />
+            <div className="absolute top-40 left-10 w-36 h-36 bg-purple-100/30 rounded-full blur-xl" />
+            <div className="absolute bottom-20 right-40 w-28 h-28 bg-pink-100/30 rounded-lg -rotate-6" />
+            <div className="absolute bottom-10 left-1/3 w-20 h-20 bg-blue-100/40 rounded-full" />
+
+            <div className="mb-10 relative z-10">
                 <span className="text-primary font-bold tracking-wider text-sm uppercase mb-2 block">Skills</span>
                 <h3 className="text-3xl font-bold text-gray-900">기술 스택</h3>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
                 {Object.entries(skills).map(([category, items]) => (
                     <div key={category} className="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-toss transition-shadow">
                         <h4 className="text-lg font-bold text-gray-900 mb-4">{category}</h4>

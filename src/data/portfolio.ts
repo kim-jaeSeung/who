@@ -6,6 +6,11 @@ export interface PortfolioItem {
   description: string;
   techStack: string[];
   role?: string;
+  responsibilities?: {
+    frontend?: string[];
+    backend?: string[];
+    other?: string[];
+  };
   details: { title: string; content: string }[];
   learned?: string[];
   imgSrc: string;
@@ -66,6 +71,21 @@ export const portfolioData: PortfolioItem[] = [
     techStack: ["React", "Node.js", "Express", "MySQL"],
     role: "팀장, 프론트엔드, 백엔드",
     teamSize: 6,
+    responsibilities: {
+      frontend: [
+        "커뮤니티 페이지 구현",
+        "게시글 목록, 상세 보기, 작성 폼 등 전반적인 뷰 구성",
+      ],
+      backend: [
+        "커뮤니티 게시판 관련 REST API 개발 (CRUD 완비)",
+        "게시글 등록, 조회, 수정, 삭제 기능 구현",
+        "커뮤니티 관련 DB 테이블 설계 및 연동",
+      ],
+      other: [
+        "프로젝트 일정 관리 및 역할 분배, 회의 진행",
+        "Git, Figma 등을 활용한 팀원 간 원활한 협업 주도",
+      ],
+    },
     details: [
       {
         title: "로그인 / 회원가입",
@@ -104,8 +124,13 @@ export const portfolioData: PortfolioItem[] = [
     description:
       "화장실에서 보내는 시간을 즐겁게 만드는 모바일 웹 애플리케이션",
     techStack: ["React", "TailwindCSS", "Node.js", "Express", "MySQL"],
-    role: "팀원",
+    role: "팀원, 프론트엔드, 백엔드",
     teamSize: 5,
+    responsibilities: {
+      other: [
+        "해당 프로젝트 같은 경우에는 팀원들이 각자 본인들의 방법으로 모든 기능을 구현하여 진행",
+      ],
+    },
     details: [
       {
         title: "재미 콘텐츠",
@@ -139,6 +164,18 @@ export const portfolioData: PortfolioItem[] = [
     ],
     role: "프론트엔드 & 백엔드",
     teamSize: 4,
+    responsibilities: {
+      frontend: [
+        "메인 페이지 및 관심 종목 페이지에서 실시간 주가 정보 시각화",
+        "사용자별 관심 종목 저장 및 조회 기능 구현",
+        "주식 데이터를 기반으로 변화 추이를 시각화한 차트 구현 (차트 라이브러리 활용)",
+      ],
+      backend: [
+        "종목별 주가 정보, 사용자 관심 종목, 차트용 데이터 등을 관리하는 DB 테이블 구조 설계 및 구현",
+        "백엔드에서 외부 API 통신을 통해 주식 데이터를 수집하고, 이틀치 데이터를 비교하여 실시간 변동 여부 판단",
+        "랜덤성을 고려해 실전과 유사한 가상 데이터 생성",
+      ],
+    },
     details: [
       {
         title: "주식 데이터 제공",

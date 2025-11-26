@@ -162,28 +162,120 @@ const ProjectDetail = () => {
       {/* 주요 기능 */}
       <div className="mb-12">
         <h3 className="font-bold text-2xl mb-6 text-gray-900">주요 기능</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {item.details.map((detail, idx) => (
-            <div
-              key={idx}
-              className="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
-            >
-              <h4 className="font-bold text-base mb-2 text-primary">
-                {detail.title}
-              </h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {detail.content}
-              </p>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {item.details.map((detail, idx) => {
+            // 각 카드마다 다른 테두리 색상 지정
+            const borderColors = [
+              'border-purple-300/50 hover:border-purple-400',
+              'border-pink-300/50 hover:border-pink-400',
+              'border-blue-300/50 hover:border-blue-400',
+              'border-cyan-300/50 hover:border-cyan-400',
+              'border-violet-300/50 hover:border-violet-400',
+              'border-orange-300/50 hover:border-orange-400',
+              'border-emerald-300/50 hover:border-emerald-400',
+              'border-indigo-300/50 hover:border-indigo-400',
+            ];
+            const borderColor = borderColors[idx % borderColors.length];
+
+            // 각 카드마다 다른 배경 액센트 색상
+            const accentColors = [
+              'bg-purple-50/50',
+              'bg-pink-50/50',
+              'bg-blue-50/50',
+              'bg-cyan-50/50',
+              'bg-violet-50/50',
+              'bg-orange-50/50',
+              'bg-emerald-50/50',
+              'bg-indigo-50/50',
+            ];
+            const accentColor = accentColors[idx % accentColors.length];
+
+            return (
+              <div
+                key={idx}
+                className={`${accentColor} backdrop-blur-xl border-2 ${borderColor} p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 relative overflow-hidden group`}
+              >
+                {/* 배경 그라데이션 효과 */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                {/* 컨텐츠 */}
+                <div className="relative z-10">
+                  <h4 className="font-bold text-lg mb-3 text-gray-900">
+                    {detail.title}
+                  </h4>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    {detail.content}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
+
+
+
+      {/* 담당 역할 */}
+      {item.responsibilities && (
+        <div className="mb-12">
+          <h3 className="font-bold text-2xl mb-6 text-gray-900">담당 역할</h3>
+          <div className="space-y-6">
+            {item.responsibilities.frontend && (
+              <div className="bg-white p-6 rounded-2xl border border-gray-200">
+                <h4 className="font-bold text-lg mb-4 text-gray-900 flex items-center gap-2">
+                  프론트엔드
+                </h4>
+                <ul className="space-y-2">
+                  {item.responsibilities.frontend.map((task, idx) => (
+                    <li key={idx} className="text-gray-700 leading-relaxed flex items-center gap-2">
+                      <span className="text-blue-500 ">•</span>
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {item.responsibilities.backend && (
+              <div className="bg-white p-6 rounded-2xl border border-gray-200">
+                <h4 className="font-bold text-lg mb-4 text-gray-900 flex items-center gap-2">
+                  백엔드
+                </h4>
+                <ul className="space-y-2">
+                  {item.responsibilities.backend.map((task, idx) => (
+                    <li key={idx} className="text-gray-700 leading-relaxed flex items-center gap-2">
+                      <span className="text-green-500 ">•</span>
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {item.responsibilities.other && (
+              <div className="bg-white p-6 rounded-2xl border border-gray-200">
+                <h4 className="font-bold text-lg mb-4 text-gray-900 flex items-center gap-2">
+                  기타
+                </h4>
+                <ul className="space-y-2">
+                  {item.responsibilities.other.map((task, idx) => (
+                    <li key={idx} className="text-gray-700 leading-relaxed flex items-center gap-2">
+                      <span className="text-purple-500">•</span>
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* 배운 점 */}
       {item.learned && (
         <div className="mb-12">
           <div className="bg-blue-50 p-8 rounded-3xl border border-blue-200">
-            <ul className="list-disc list-inside space-y-3 text-gray-800 text-base">
+            <ul className="list-disc list-inside space-y-3 text-gray-800 text-sm">
               {item.learned.map((learn, idx) => (
                 <li key={idx} className="leading-relaxed">
                   {learn}
@@ -232,7 +324,7 @@ const ProjectDetail = () => {
           {/* 목록으로 */}
           <button
             onClick={() => navigate("/")}
-            className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors px-4 py-2 border border-gray-200 rounded-lg hover:border-primary"
+            className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors px-4 py-2 "
           >
             <svg
               className="w-5 h-5"
