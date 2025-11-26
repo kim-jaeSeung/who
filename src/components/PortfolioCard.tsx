@@ -11,14 +11,6 @@ const PortfolioCard = ({ item }: Props) => {
       to={`/project/${item.id}`}
       className="group bg-white rounded-3xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-toss hover:-translate-y-1 border border-gray-100 flex flex-col h-full"
     >
-      {/* <div className="h-48 bg-gray-100 overflow-hidden relative">
-        <img
-          src={item.imgSrc}
-          alt={item.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-      </div> */}
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-center mb-3">
           <span className="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded-md">

@@ -18,8 +18,8 @@ export interface PortfolioItem {
 
 export const portfolioData: PortfolioItem[] = [
   {
-    id: "kr-js-input-validator",
-    title: "kr-js-input-validator",
+    id: "input 유효성 검사 라이브러리",
+    title: "input 유효성 검사 라이브러리",
     type: "오픈소스",
     period: "2025.11.25 ~ 유지보수 중",
     description:
