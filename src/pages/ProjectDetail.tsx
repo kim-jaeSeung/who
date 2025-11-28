@@ -90,7 +90,7 @@ const ProjectDetail = () => {
 
       {/* 프로젝트 설명 */}
       <p className="text-xl text-gray-700 mb-12 leading-relaxed font-medium">
-        {item.description}
+        {item.detailedDescription || item.description}
       </p>
 
       {/* 프로젝트 정보 & 링크 */}

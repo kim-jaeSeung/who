@@ -4,6 +4,7 @@ export interface PortfolioItem {
   type: string;
   period: string;
   description: string;
+  detailedDescription?: string;
   techStack: string[];
   role?: string;
   responsibilities?: {
@@ -27,8 +28,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "input 유효성 검사 라이브러리",
     type: "오픈소스",
     period: "1주",
-    description:
-      "React와 바닐라 JavaScript에서 사용 가능한 input 검증 NPM 라이브러리",
+    description: "React와 바닐라 JavaScript에서 사용 가능한 input 검증 NPM 라이브러리",
     techStack: ["TypeScript", "Rollup", "NPM", "React"],
     role: "1인 개발 & 배포",
     teamSize: 1,
@@ -67,7 +67,8 @@ export const portfolioData: PortfolioItem[] = [
     title: "Journee",
     type: "팀 프로젝트",
     period: "8주",
-    description: "국내 여행 수요가 증가하고 있지만 여행 계획 과정은 여전히 복잡하다는 문제에서 출발한 프로젝트입니다. 사용자는 지역·테마·선호도에 맞는 여행지를 쉽게 탐색하고, 일정 저장 및 커뮤니티 기능을 통해 여행 준비 시간을 줄일 수 있도록 기획했습니다.",
+    description: "여행 계획 간소화 및 국내 여행 독려를 위한 웹 애플리케이션",
+    detailedDescription: "국내 여행 수요가 증가하고 있지만 여행 계획 과정은 여전히 복잡하다는 문제에서 출발한 프로젝트입니다. 사용자는 지역·테마·선호도에 맞는 여행지를 쉽게 탐색하고, 일정 저장 및 커뮤니티 기능을 통해 여행 준비 시간을 줄일 수 있도록 기획했습니다.",
     techStack: ["React", "Node.js", "Express", "MySQL"],
     role: "팀장 / 프론트엔드, 백엔드",
     teamSize: 6,
@@ -82,15 +83,13 @@ export const portfolioData: PortfolioItem[] = [
       backend: [
         "커뮤니티 게시판 REST API 전반 개발 (CRUD 완비)",
         "게시글 및 사용자 테이블 구조 설계",
-        "ORM을 활용한 DB 연동 및 데이터 모델 구현",
         "요청 검증, 에러 처리, 권한 검증 로직 구성",
         "필요한 필드만 select하고 페이지네이션을 적용하여 응답 효율 개선",
       ],
       other: [
         "8주간의 프로젝트 일정 총괄 및 스프린트 계획 수립",
         "역할 분배, 회의 주도, 기능 개발 방향 조율",
-        "Git Flow 전략 도입 및 Pull Request 리뷰 프로세스 운영",
-        "Figma를 활용한 UI 구조 설계 및 팀 공유 문서 체계화",
+        "Figma, notion을 활용한 UI 구조 설계 및 팀 공유 문서 체계화",
       ],
     },
     details: [
@@ -136,8 +135,8 @@ export const portfolioData: PortfolioItem[] = [
     title: "풉타임",
     type: "팀 프로젝트",
     period: "5주",
-    description:
-      "일상 속 짧은 공백 시간, 특히 화장실에서 잠깐 머무르는 시간을 보다 즐겁고 유익하게 보낼 수 있도록 기획한 모바일 웹 애플리케이션입니다. 퀴즈, 유머, 짧은 괴담 등 가볍게 소비할 수 있는 콘텐츠를 제공하며, 사용자 간 의견을 나눌 수 있는 간단한 커뮤니티 기능을 함께 구성했습니다.",
+    description: "화장실에서 보내는 시간을 즐겁게 만드는 모바일 웹 애플리케이션",
+    detailedDescription: "일상 속 짧은 공백 시간, 특히 화장실에서 잠깐 머무르는 시간을 보다 즐겁고 유익하게 보낼 수 있도록 기획한 모바일 웹 애플리케이션입니다. 퀴즈, 유머, 짧은 괴담 등 가볍게 소비할 수 있는 콘텐츠를 제공하며, 사용자 간 의견을 나눌 수 있는 간단한 커뮤니티 기능을 함께 구성했습니다.",
     techStack: ["React", "TailwindCSS", "Node.js", "Express", "MySQL"],
     role: "팀원 / 프론트엔드 및 백엔드 일부 담당",
     teamSize: 5,
@@ -189,7 +188,8 @@ export const portfolioData: PortfolioItem[] = [
     title: "모투슛",
     type: "팀 프로젝트",
     period: "4주",
-    description: "주식 투자를 처음 접하는 사용자가 실제 돈을 사용하지 않고도 투자 원리를 이해할 수 있도록 설계된 모의 투자 웹 애플리케이션입니다. 공공 API를 기반으로 한 주식 데이터 제공, 초보자도 쉽게 사용할 수 있는 매수·매도 기능, 투자 결과 확인 기능 등을 통해 학습 중심의 경험을 제공합니다. 또한 재미 요소로 가상 대출 기능을 추가하여 사용자 참여도를 높였습니다.",
+    description: "초보자를 위한 주식 모의 투자 및 학습 웹앱",
+    detailedDescription: "주식 투자를 처음 접하는 사용자가 실제 돈을 사용하지 않고도 투자 원리를 이해할 수 있도록 설계된 모의 투자 웹 애플리케이션입니다. 공공 API를 기반으로 한 주식 데이터 제공, 초보자도 쉽게 사용할 수 있는 매수·매도 기능, 투자 결과 확인 기능 등을 통해 학습 중심의 경험을 제공합니다. 또한 재미 요소로 가상 대출 기능을 추가하여 사용자 참여도를 높였습니다.",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -258,7 +258,8 @@ export const portfolioData: PortfolioItem[] = [
     title: "나의 포트폴리오",
     type: "개인 프로젝트",
     period: "1주",
-    description: "개인 기술 스택과 프로젝트 경험을 소개하는 포트폴리오 사이트입니다. JSON 및 TypeScript 기반으로 데이터를 구조화하여 유지보수성과 확장성을 확보하고, React와 TailwindCSS를 활용하여 모던하고 직관적인 UI/UX를 구현했습니다.",
+    description: "개인 기술 스택과 프로젝트 경험을 소개하는 포트폴리오 사이트",
+    detailedDescription: "개인 기술 스택과 프로젝트 경험을 소개하는 포트폴리오 사이트입니다. JSON 및 TypeScript 기반으로 데이터를 구조화하여 유지보수성과 확장성을 확보하고, React와 TailwindCSS를 활용하여 모던하고 직관적인 UI/UX를 구현했습니다.",
     techStack: ["React", "TypeScript", "TailwindCSS", "Vite"],
     role: "1인 개발",
     teamSize: 1,
