@@ -57,7 +57,6 @@ export const portfolioData: PortfolioItem[] = [
       "TypeScript로 타입 안전한 API 설계",
       "React Hooks 패턴을 활용한 재사용 가능한 로직 구현",
       "AI 도구를 개발 파트너로 적극 활용하여 설계·테스트·문서화까지 생산성 극대화",
-      "AI 협업 기반으로 반복 작업을 자동화하고 의사결정 속도를 개선",
     ],
     imgSrc: "/who/img/npmLogo.svg",
     links: {
